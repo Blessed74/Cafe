@@ -31,8 +31,10 @@ namespace Cafe
         private void button2_Click(object sender, EventArgs e)
         {
             frmPromotions frmPromotions = new frmPromotions();
-            this.Close();
-            frmPromotions.Show();
+            this.Hide();
+            frmPromotions.ShowDialog();
+            this.Show();
+            
         }
 
         private void btnDishes_Click(object sender, EventArgs e)
