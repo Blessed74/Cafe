@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24F836CB-E269-4751-915C-79B16EEC3D59}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cafe</RootNamespace>
+    <AssemblyName>Cafe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>dining_room-48_46338.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CafeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CafeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CafeDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CafeDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CafeDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CafeDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CafeDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CafeDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBImage.cs" />
+    <Compile Include="formAddDish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddDish.Designer.cs">
+      <DependentUpon>formAddDish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdmin.Designer.cs">
+      <DependentUpon>formAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAuthorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAuthorization.Designer.cs">
+      <DependentUpon>formAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formClient.Designer.cs">
+      <DependentUpon>formClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEmployee.Designer.cs">
+      <DependentUpon>formEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHistory.Designer.cs">
+      <DependentUpon>formHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formNewPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formNewPromotion.Designer.cs">
+      <DependentUpon>formNewPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPointItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPointItem.Designer.cs">
+      <DependentUpon>formPointItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRegistration.Designer.cs">
+      <DependentUpon>formRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddItem.Designer.cs">
+      <DependentUpon>frmAddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCard.Designer.cs">
+      <DependentUpon>frmCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonal.Designer.cs">
+      <DependentUpon>frmPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPromotions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPromotions.Designer.cs">
+      <DependentUpon>frmPromotions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuantity.Designer.cs">
+      <DependentUpon>frmQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Good.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formAddDish.resx">
+      <DependentUpon>formAddDish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAdmin.resx">
+      <DependentUpon>formAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAuthorization.resx">
+      <DependentUpon>formAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formClient.resx">
+      <DependentUpon>formClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEmployee.resx">
+      <DependentUpon>formEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHistory.resx">
+      <DependentUpon>formHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formNewPromotion.resx">
+      <DependentUpon>formNewPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPointItem.resx">
+      <DependentUpon>formPointItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRegistration.resx">
+      <DependentUpon>formRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddItem.resx">
+      <DependentUpon>frmAddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCard.resx">
+      <DependentUpon>frmCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonal.resx">
+      <DependentUpon>frmPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPromotions.resx">
+      <DependentUpon>frmPromotions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuantity.resx">
+      <DependentUpon>frmQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="CafeDataSet.xsc">
+      <DependentUpon>CafeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeDataSet.xss">
+      <DependentUpon>CafeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet1.xsc">
+      <DependentUpon>CafeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeDataSet1.xss">
+      <DependentUpon>CafeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet21.xsc">
+      <DependentUpon>CafeDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeDataSet21.xss">
+      <DependentUpon>CafeDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet31.xsc">
+      <DependentUpon>CafeDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeDataSet31.xss">
+      <DependentUpon>CafeDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet41.xsc">
+      <DependentUpon>CafeDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeDataSet41.xss">
+      <DependentUpon>CafeDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet5.xsc">
+      <DependentUpon>CafeDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeDataSet5.xss">
+      <DependentUpon>CafeDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet6.xsc">
+      <DependentUpon>CafeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeDataSet6.xss">
+      <DependentUpon>CafeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet7.xsc">
+      <DependentUpon>CafeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="CafeDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeDataSet7.xss">
+      <DependentUpon>CafeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Без названия.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty_picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dining_room-48_46338.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CafeDataSet1" targetNamespace="http://tempuri.org/CafeDataSet1.xsd" xmlns:mstns="http://tempuri.org/CafeDataSet1.xsd" xmlns="http://tempuri.org/CafeDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CafeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CafeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Cafe.Properties.Settings.GlobalReference.Default.CafeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Список_акцийTableAdapter" GeneratorDataComponentClassName="Список_акцийTableAdapter" Name="Список_акций" UserDataComponentName="Список_акцийTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CafeConnectionString (Settings)" DbObjectName="Cafe.dbo.Список_акций" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_акция, Название FROM dbo.Список_акций</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_акция" DataSetColumn="id_акция" />
+              <Mapping SourceColumn="Название" DataSetColumn="Название" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CafeDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="CafeDataSet1" msprop:Generator_DataSetName="CafeDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Список_акций" msprop:Generator_RowEvHandlerName="Список_акцийRowChangeEventHandler" msprop:Generator_RowDeletedName="Список_акцийRowDeleted" msprop:Generator_RowDeletingName="Список_акцийRowDeleting" msprop:Generator_RowEvArgName="Список_акцийRowChangeEvent" msprop:Generator_TablePropName="Список_акций" msprop:Generator_RowChangedName="Список_акцийRowChanged" msprop:Generator_RowChangingName="Список_акцийRowChanging" msprop:Generator_TableClassName="Список_акцийDataTable" msprop:Generator_RowClassName="Список_акцийRow" msprop:Generator_TableVarName="tableСписок_акций" msprop:Generator_UserTableName="Список_акций">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_акция" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="id_акция" msprop:Generator_ColumnPropNameInTable="id_акцияColumn" msprop:Generator_ColumnVarNameInTable="columnid_акция" msprop:Generator_UserColumnName="id_акция" type="xs:int" />
+              <xs:element name="Название" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Название" msprop:Generator_ColumnPropNameInTable="НазваниеColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание" msprop:Generator_UserColumnName="Название" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="116" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Список_акций" />
+      <xs:field xpath="mstns:id_акция" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
