@@ -25,19 +25,6 @@ namespace Cafe.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Cafe;Data So" +
-            "urce=DESKTOP-849LOEV\\SQLEXPRESS;")]
-        public string connString {
-            get {
-                return ((string)(this["connString"]));
-            }
-            set {
-                this["connString"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int userId {
             get {
@@ -48,14 +35,15 @@ namespace Cafe.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-849LOEV\\SQLEXPRESS;Initial Catalog=Cafe;Integrated Security=T" +
-            "rue;Encrypt=False;TrustServerCertificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string CafeConnectionString {
             get {
                 return ((string)(this["CafeConnectionString"]));
+            }
+            set {
+                this["CafeConnectionString"] = value;
             }
         }
         

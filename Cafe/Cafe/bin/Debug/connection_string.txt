@@ -1,0 +1,1 @@
+Data Source=DESKTOP-849LOEV\SQLEXPRESS;Initial Catalog=Cafe;Integrated Security=True;Encrypt=False;TrustServerCertificate=True

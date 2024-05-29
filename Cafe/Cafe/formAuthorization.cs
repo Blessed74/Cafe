@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace Cafe
 {
@@ -23,6 +24,10 @@ namespace Cafe
 
         private void formAuthorization_Load(object sender, EventArgs e)
         {
+            //при загрузке приложения происходит чтение файла со строкой подключения
+            StreamReader sr = new StreamReader("connection_string.txt");
+            Properties.Settings.Default.CafeConnectionString = sr.ReadLine();
+
 
         }
 
