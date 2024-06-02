@@ -99,7 +99,16 @@ namespace Cafe
 
         private void dgvOrder_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            if (dgvOrder.Rows.Count == 0)
+            {
+                numericUpDown1.Value = 0;
+                numericUpDown1.Enabled = false;
+                btnEnter.Enabled = false;
+                return;
+            }
+
+            numericUpDown1.Enabled = true;
+            btnEnter.Enabled = true;
             numericUpDown1.Value = Convert.ToInt32(dgvOrder.CurrentRow.Cells[3].Value);
            
            
